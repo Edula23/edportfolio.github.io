@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/1469cf7289.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="header">
         <div class="container">
@@ -32,12 +33,13 @@
             <div class="row">
                 <div class="about-col-1">
                     <h1 class="sub-title">About Me</h1>
-                    <p>I'm a Front End Web Developer, a student and an Enthusiastic girl who wants to make the world a better place.</p>
-                    </div>
+                    <p>I'm a Front End Web Developer, a student and an Enthusiastic girl who wants to make the world a better place. </p>
+                    
+                </div>
                 </div>
             </div>
         </div>
-     <!---------Projects--------->
+        <!---------Projects--------->
     
         <div id="portfolio">
             <div class="container">
@@ -52,7 +54,12 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="images/calculator pic.png" alt="work1">
+                        
+                        <img src="images/tictactoe.png" alt="work1">
+                        <div class="layer">
+                            <h3>Game</h3>
+                            <a href="https://tictactoe.edendesign.dev"><i class="fa-solid fa-gamepad"></i></a>
+                        </div>
                     </div>
                     <div class="work">
                         <img src="images/calculator pic.png" alt="work1">
@@ -66,8 +73,8 @@
                 <div class="row">
                     <div class="contact-left">
                         <h1 class="sub-title">Contact Me</h1>
-                        <p>edengebeta210@gmail.com</p>
-                        <p>+251955352767</p>
+                        <p><i class="fa-solid fa-arrow-up-right-from-square"></i>edengebeta210@gmail.com</p>
+                        <p> <i class="fa-solid fa-phone"></i>+251955352767</p>
                         <div class="social-icons">
                             <a href="https://www.facebook.com/profile.php?id=100057713111035"><i class="fa-brands fa-facebook"></i></a>
                             <a href="https://www.instagram.com/eduuallex"><i class="fa-brands fa-square-instagram"></i></a>
@@ -76,16 +83,18 @@
                         </div>
 
                     </div>
-                    <div class="contact-left">
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
                         
                     </div>
                 </div>
             </div>
         </div>
-                    
-        
-                   
-                    
         <script>
 
             var tablinks = document.getElementsByClassName("tab-links");
