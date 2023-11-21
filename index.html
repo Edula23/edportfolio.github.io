@@ -13,12 +13,15 @@
         <div class="container">
             <nav>
                 <img src="images/Eden Logo.png" alt="logo" class="logo">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+              <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
               </ul>
+              <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+              
             </nav>
             <div class="header-text">
                 <h1>Welcome to my Personal Portfolio</h1> 
@@ -41,7 +44,7 @@
         </div>
         <!---------Projects--------->
     
-        <div id="portfolio">
+        <div id="projects">
             <div class="container">
                 <h1 class="sub-title">My Projects </h1>
                 <div class="work-list">
@@ -99,6 +102,9 @@
                     </div>
                 </div>
             </div>
+            <div class="copyright">
+                <p>copyright </p>
+            </div>
         </div>
         <script>
 
@@ -116,12 +122,22 @@
                 document.getElementById(tabname).classList.add("active-tab");
 
             }
-            
+    
                 
 
                 
 
 
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
         </script>
 </body>
 </html>
